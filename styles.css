@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-image: url('img/rick-rothenberg-EcLkjpd6eZ4-unsplash.jpg');
     background-size: 80vw,80vh;
-    animation: beweegAchtergrond 60s infinite linear;
+    animation: beweegAchtergrond 50s infinite linear;
 }
 
 header {
@@ -79,5 +79,24 @@ footer {
     }
     to {
         background-position: 100% 0;
+    }
+}
+
+
+
+/* Telefoon en kleiner */
+@media screen and (max-width: 767px) {
+    body {
+        background-size: contain;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    section {
+        display: block;
+        text-align: center;
+    }
+    .interactive-box {
+        width: 100%;
     }
 }
